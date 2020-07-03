@@ -26,4 +26,8 @@ class Artist
     Song.new(name, self, genre)
   end
 
+  def genres
+    songs.map(&:genre)
+  end
+
 end
