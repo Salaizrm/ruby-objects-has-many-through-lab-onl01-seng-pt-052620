@@ -5,6 +5,11 @@ class Genre
 
   def initialize(genre)
     @genre = genre
+    save
+  end
+
+  def save
+    @@all << self
   end
 
 end
